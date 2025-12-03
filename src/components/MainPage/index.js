@@ -6,8 +6,8 @@ import Search from '../Search'
 import Card from '../Card'
 import './MainPage.scss';
 
-const BACK_URL = "http://localhost:80"
-// const BACK_URL = "https://gundam-back.onrender.com"
+// const BACK_URL = "http://localhost:80"
+const BACK_URL = "https://gundam-back.onrender.com"
 
 const MainPage = ({ isEdit }) => {
 
