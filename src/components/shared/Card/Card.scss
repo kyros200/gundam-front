@@ -1,0 +1,27 @@
+@import '../../../variables';
+
+.cardNajjar {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    padding: 12px;
+    box-sizing: border-box;
+    color:$text-color;
+    background-color: $primary;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+
+    box-shadow: 0px 0px 0px black;
+    transform: translate(0px, 0px);
+    transition: 250ms ease-in-out;
+
+    &:hover {
+        transform: translate(-10px, -10px);
+        box-shadow: 10px 10px 0px black;
+    }
+}

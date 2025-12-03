@@ -1,0 +1,21 @@
+@import '../../../variables';
+
+.linkNajjar {
+    color: $text-color-black;
+    text-decoration: none;
+    user-select: none;
+    display: inline; /* should be 'inline' for multiple line animation */
+    background-image: linear-gradient(to right, $text-color, $primary-light);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s;
+    background-position: 0 calc(100% - 0px);
+
+    &:hover {
+        background-size: 100% 3px;
+    }
+
+    &.bold {
+        font-weight: 700;
+    }
+}

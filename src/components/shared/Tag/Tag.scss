@@ -1,0 +1,14 @@
+@import '../../../variables';
+
+.tagNajjar {
+    user-select: none;
+    background-color: $primary-dark;
+    border-radius: 9999px;
+    padding: 4px 12px;
+    margin-right: 6px;
+    margin-bottom: 4px;
+    
+    &:last-child {
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,53 @@
+@import '../../../variables';
+
+.section-loader {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, $primary 0%, $primary-dark 100%);
+  padding: 0px 16px;
+  color: white;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  bottom: 0px;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  z-index: 10;
+
+  transition: opacity 1s linear, height 1s step-start, padding 1s step-start;
+
+  &.hide {
+    height: 0px;
+    padding: 0px;
+    opacity: 0;
+    transition-timing-function: linear, step-end;
+  }
+
+  @media screen and (max-width: $mobile) {
+    justify-content: flex-end
+  }
+
+  > .text{
+    position: relative;
+    width: 550px;
+    top: 30%;
+    left: 100px;
+    font-size: 48px;
+    line-height: 62px;
+    font-weight: 400;
+
+    &.bold {
+      font-weight: 800;
+    }
+
+    @media screen and (max-width: $mobile) {
+      width: 100%;
+      left: 0px;
+      top: unset;
+      bottom: 160px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}

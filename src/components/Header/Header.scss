@@ -1,0 +1,20 @@
+@import '../../variables.scss';
+
+.header-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: $primary-dark;
+    text-align: center;
+    user-select: none;
+
+    padding: 10px 0px;
+
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+    color: #f0f8ff;
+    font-size: 40px;
+    line-height: 40px;
+    user-select: none;
+    z-index: 3;
+}

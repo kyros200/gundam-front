@@ -1,0 +1,79 @@
+.borderless {
+    border: 0px;
+}
+
+.navBarContainer, .najjarDocEditor {
+    width: 1100px;
+
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+    }
+}
+
+.navBarContainer {
+    display: flex;
+
+    @media only screen and (max-width: 800px) {
+        overflow-x: scroll;
+    }
+
+    >.option {
+        flex: 1;
+        text-align: center;
+        
+        @media only screen and (max-width: 800px) {
+            flex: none;
+            width: 200px;
+        }
+    }
+
+    >.closeNajjarDoc {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    >.option, .closeNajjarDoc {
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        position: relative;
+        // padding: 12px;
+        box-sizing: border-box;
+        color:#f0f8ff;
+        background-color: #2B912D;
+        align-items: center;
+        cursor: pointer;
+
+        background-repeat: no-repeat !important;
+        background-size: 100% 100% !important;
+
+        box-shadow: 0px 0px 0px black;
+        transform: translate(0px, 0px);
+        transition: 250ms ease-in-out;
+
+        &:hover {
+            transform: translate(-10px, -10px);
+            box-shadow: 10px 10px 0px black;
+        }
+    }
+
+    >.selected {
+        background-color: #2B6535;
+    }
+}
+
+.najjarDocEditor {
+    padding: 0;
+    overflow-y: auto;
+    height: 500px;
+    max-height: 70vh;
+}
+
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 500px;
+    max-height: 70vh;
+}

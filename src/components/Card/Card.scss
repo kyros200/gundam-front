@@ -1,0 +1,89 @@
+@import '../../variables.scss';
+
+.card-container {
+    width: 250px;
+    background-color: $background-gray-light;
+    border: 1px solid black;
+    box-shadow: 3px 3px;
+    padding: 6px;
+    margin: 8px 0px;
+
+    &.have {
+        background-color: $primary-light;
+    }
+
+    &.banned {
+        background-color: $error;
+    }
+
+    .name {
+        white-space: nowrap;
+        overflow: auto;
+        text-align: center;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 8px;
+
+        img {
+            border-radius: 12px;
+            width: 100%;
+        }
+    }
+
+    .otherSide {
+        display: none;
+    }
+
+    .image:hover .otherSide {
+        display: block;
+        z-index: 2;
+    }
+
+    .price-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 12px;
+
+        .price {
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        .link {
+            display: flex;
+            justify-content: space-around;
+            font-size: 12px;
+            padding: 4px;
+    
+            a {
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .button {
+        padding: 4px;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+
+        >.button {
+            margin-bottom: 8px;
+
+            &.red:hover {
+                background-color: $error;
+            }
+        }
+    }
+}

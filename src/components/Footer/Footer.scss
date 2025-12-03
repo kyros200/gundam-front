@@ -1,0 +1,57 @@
+@import '../../variables.scss';
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: #2b6535;
+    text-align: end;
+    user-select: none;
+
+    padding: 10px 16px;
+    margin-top: 20px;
+
+    text-decoration: none;
+    color: #f0f8ff;
+    user-select: none;
+    z-index: 3;
+
+    :not(:first-child) {
+        margin-top: 12px;
+    }
+    
+    .text {
+        text-align: end;
+        user-select: none;
+        text-decoration: none;
+        color: #f0f8ff;
+        user-select: none;
+
+
+        >.hatch {
+            font-size: 22px;
+            
+            .link {
+                font-family: 'Righteous', cursive;
+                color: #f0f8ff;
+                text-decoration: none;
+                user-select: none;
+                display: inline; /* should be 'inline' for multiple line animation */
+                background-image: linear-gradient(to right, #f0f8ff, #9FD39C);
+                background-size: 0% 3px;
+                background-repeat: no-repeat;
+                transition: background-size 0.3s;
+                background-position: 0 calc(100% - 0px);
+            
+                &:hover {
+                    background-size: 100% 3px;
+                }
+            
+                &.bold {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

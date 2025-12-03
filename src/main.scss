@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+html, body, .viewport {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Kufam', cursive;
+    font-weight: 500;
+
+    &::selection {
+        color: $primary-dark;
+        background: $secondary;
+    }
+}
+
+#root {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+}

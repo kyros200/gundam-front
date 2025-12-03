@@ -1,0 +1,41 @@
+@import '../../../variables';
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-section;
+
+    .content {
+        width: 1110px;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: $mobile) {
+            width: 95%;
+        }
+
+        .header {
+            font-size: 40px;
+            font-weight: 800;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            .line {
+                margin-top: 8px;
+                width: 200px;
+                border-bottom: 3px solid $primary-dark;
+            }
+        }
+        
+        .footer {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: end;
+
+            .line {
+                margin-top: 30px;
+                border-bottom: 3px solid $primary-dark;
+            }
+        }
+    }
+}

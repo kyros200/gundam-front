@@ -1,0 +1,35 @@
+@import '../../variables.scss';
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    .search-fields {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        .input {
+            margin-right: 12px;
+            padding: 6px;
+        }
+
+        >.button {
+            margin-left: 10px;
+        }
+    }
+
+    .search-count-result {
+        text-align: center;
+
+        .number {
+            font-size: 32px;
+            font-weight: 700;
+        }
+    }
+}

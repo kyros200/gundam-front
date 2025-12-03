@@ -1,0 +1,73 @@
+@import '../../variables.scss';
+
+.set-container {
+    margin-bottom: 20px;
+
+    .accodion-button {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        box-shadow: 5px 5px;
+        cursor: pointer;
+        font-size: 32px;
+        padding: 8px;
+
+        background-color: #f0f8ff;
+
+        transition: all 0.3s;
+
+        .set-name {
+            display: flex;
+            align-items: center;
+
+            .icon-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 40px;
+                img {
+                    max-height: 100%;
+                    margin-right: 12px;
+                }
+            }
+        }
+
+        &.completed {
+            background-color: $primary;
+        }
+
+        &.partial {
+            background-color: yellow;
+        }
+
+        &:hover {
+            filter: brightness(85%);
+        }
+    }
+
+    .accordion-content {
+        .buttons-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 16px 0;
+
+            .button {
+                font-size: 24px;
+                &.red {
+                    background-color: $error;
+                }
+            }
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        &.hide {
+            display: none;
+        }
+    }
+}
