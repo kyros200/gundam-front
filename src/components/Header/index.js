@@ -33,7 +33,6 @@ const Header = () => {
             return res.json()
         })
         .then((res) => {
-            console.log(res)
             localStorage.setItem('gundam-najjar-login', JSON.stringify({
                 user: inputUser,
                 pass: inputPass,
@@ -74,7 +73,6 @@ const Header = () => {
             return res.json()
         })
         .then((res) => {
-            console.log(res)
             localStorage.setItem('gundam-najjar-login', JSON.stringify({
                 user: inputUser,
                 pass: inputPass,
@@ -112,7 +110,6 @@ const Header = () => {
 
     useEffect(() => {
         setLoggedUser(JSON.parse(localStorage.getItem('gundam-najjar-login')))
-        console.log(setLoggedUser)
     }, [loggedUser])
 
     return (
