@@ -10,11 +10,47 @@
 
     padding: 10px 0px;
 
-    font-family: 'Righteous', cursive;
-    text-decoration: none;
-    color: #f0f8ff;
-    font-size: 40px;
-    line-height: 40px;
-    user-select: none;
-    z-index: 3;
+    
+    display: flex;
+    justify-content: center;
+    
+    .header-content {
+        width: $content-size-desk;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            font-family: 'Righteous', cursive;
+            text-decoration: none;
+            color: #f0f8ff;
+            font-size: 40px;
+            line-height: 40px;
+            user-select: none;
+            z-index: 3;
+        }
+
+        .header-login {
+            display: flex;
+
+            h6 {
+                font-family: 'Righteous', cursive;
+                text-decoration: none;
+                color: #f0f8ff;
+                font-size: 14px;
+                line-height: 40px;
+                user-select: none;
+                z-index: 3;
+                margin: 0;
+                margin-right: 4px;
+            }
+        }
+
+        @media screen and (max-width: $mobile) {
+            span {
+                margin-left: 8px;
+                font-size: 26px;
+            }
+        }
+    }
+
 }

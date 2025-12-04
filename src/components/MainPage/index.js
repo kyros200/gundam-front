@@ -5,11 +5,9 @@ import Modal from '../Modal';
 import Search from '../Search'
 import Card from '../Card'
 import './MainPage.scss';
+import BACK_URL from '../../conts';
 
-// const BACK_URL = "http://localhost:80"
-const BACK_URL = "https://gundam-back.onrender.com"
-
-const MainPage = ({ isEdit }) => {
+const MainPage = () => {
 
     const [isLoading, setIsLoading] = useState(false)
     const [data, setData] = useState([])
