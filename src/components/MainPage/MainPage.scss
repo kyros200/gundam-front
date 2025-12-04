@@ -14,6 +14,7 @@
 
         @media screen and (max-width: $mobile) {
             width: 95%;
+            grid-template-columns: auto;
         }
     }
 }
